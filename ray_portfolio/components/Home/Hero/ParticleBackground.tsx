@@ -49,9 +49,9 @@ export default function ParticlesHero() {
         },
       },
       particles: {
-        color: { value: "#00FFFF" },
+        color: { value: "#f2fafa" },
         links: {
-          color: "#00FFFF",
+          color: "#f2fafa",
           distance: 150,
           enable: true,
           opacity: 0.4,

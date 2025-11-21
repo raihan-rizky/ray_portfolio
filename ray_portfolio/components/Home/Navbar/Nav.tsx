@@ -36,12 +36,12 @@ const Nav = ({ openNav }: Props) => {
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/* LOQGO */}
         <div className="flex items-center space-x-2">
-          <div className="w-25 h-15 flex items-center justify-center flex-col">
+          <div className="w-40 h-30 flex items-center justify-center flex-col">
             <Image
               src="/images/raihan_logo.png"
               alt="logo"
-              width={200}
-              height={200}
+              width={300}
+              height={500}
             />
           </div>
         </div>
@@ -52,7 +52,7 @@ const Nav = ({ openNav }: Props) => {
               <Link
                 key={link.id}
                 href={link.url}
-                className="text-base hover:text-cyan-300 text-gray font-medium transition-all duration-200"
+                className="text-base hover:text-[#6E8CFB] text-[#e6eafa] font-medium transition-all duration-200"
               >
                 <p>{link.label}</p>
               </Link>
@@ -63,16 +63,18 @@ const Nav = ({ openNav }: Props) => {
         <div className="flex items-center space-x-4">
           {/* CV Button */}
           <button
-            className="px-8 py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all 
+            className="px-5 py-2.5 md:px-8 md:py-3.5 text-sm cursor-pointer rounded-lg bg-blue-800 hover:bg-blue-900 transition-all 
                         duration-300 text-white flex items-center space-x-2"
           >
             <BiDownload className="text-lg" />
-            <span>Download CV</span>
+            <p>
+              <span className="hidden md:inline-block">Download</span> CV
+            </p>
           </button>
           {/* Burger Menu */}
           <HiBars3BottomRight
             onClick={openNav}
-            className="w-8 h-8 cursor-pointer text-gray lg:hidden"
+            className="w-8 h-8 cursor-pointer text-white lg:hidden"
           />
         </div>
       </div>
