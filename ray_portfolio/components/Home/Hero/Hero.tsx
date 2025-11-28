@@ -15,35 +15,34 @@ const Hero = () => {
       <ParticlesHero />
       <div className="relative z-10 flex flex-col items-center">
         <Image
-          src="/images/s1.jpg"
+          src="/images/almet-me.png"
           alt="hero image"
           width={150}
           height={150}
-          className="rounded-full border-2 border-[#0c0c48aa]"
+          className=" z-9999 rounded-full border-2 border-[#0c0c48aa] bg-gray-400 "
           data-aos="fade-up"
         />
         <h1
           data-aos="fade-up"
           data-aos-delay="200"
-          className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-6 text-center font-bold tracking-wide"
+          className="text-2xl sm:text-4xl md:text-5xl lg:text-5xl mt-6 text-center font-bold tracking-wide"
         >
-          Creating web products, <br />
-          brands,
-          <span className="text-cyan-400"> and experiences.</span>
+          Building intelligent systems, <br /> robust models, and <br />
+          <span className="text-cyan-400"> data-driven solutions.</span>
         </h1>
         <h2
           data-aos="fade-up"
           data-aos-delay="400"
           className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center"
         >
-          Hi! I&apos;m Ray, a passionate
+          Hi! I&apos;m Raihan, an enthusiatic
           <span className="text-cyan-400 font-bold">
             <Typewriter
               options={{
                 strings: [
+                  "AI Engineer",
                   "Frontend Developer",
-                  "Backend Developer",
-                  "Web Developer",
+                  "Data Scientist",
                 ],
                 autoStart: true,
                 loop: true,
