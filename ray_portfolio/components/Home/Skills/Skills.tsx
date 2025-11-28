@@ -2,10 +2,13 @@
 import React from "react";
 import {
   SiJavascript,
+  SiKeras,
   SiNextdotjs,
   SiNodedotjs,
+  SiPython,
   SiReact,
   SiTailwindcss,
+  SiTensorflow,
   SiTypescript,
 } from "react-icons/si";
 import Tilt from "react-parallax-tilt";
@@ -47,12 +50,30 @@ const skills = [
     percentage: "82",
     aosDelay: "450",
   },
+  {
+    name: "Python",
+    icon: <SiPython />,
+    percentage: "85",
+    aosDelay: "500",
+  },
+  {
+    name: "Tensorflow",
+    icon: <SiTensorflow />,
+    percentage: "80",
+    aosDelay: "550",
+  },
+  {
+    name: "Keras",
+    icon: <SiKeras />,
+    percentage: "83",
+    aosDelay: "600",
+  },
 ];
 const Skills = () => {
   return (
-    <div className="pt-16 pb-16">
+    <div id="skills" className="pt-16 pb-16">
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
-        My <span className="text-cyan-300">Skills</span>
+        My <span className="text-cyan-400">Skills</span>
       </h1>
       <div className="flex flex-wrap justify-center gap-6 mt-16">
         {skills.map((skill) => {
@@ -68,7 +89,7 @@ const Skills = () => {
                 <p className="text-2xl font-semibold text-white">
                   {skill.percentage}%
                 </p>
-                <p className="text-cyan-300 mt-1">{skill.name}</p>
+                <p className="text-cyan-400 mt-1">{skill.name}</p>
               </div>
             </Tilt>
           );

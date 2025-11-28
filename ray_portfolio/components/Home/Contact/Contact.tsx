@@ -1,12 +1,20 @@
+import Link from "next/link";
 import React from "react";
 import { BiEnvelope, BiMap } from "react-icons/bi";
 import { BsFillTelephoneFill, BsTelephone } from "react-icons/bs";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import { FaX, FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <div className="pt-16 pb-16">
+    <div id="contact" className="pt-16 pb-16">
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Text Content */}
         <div>
@@ -20,17 +28,24 @@ const Contact = () => {
           {/* info */}
           <div className="mt-7">
             <div className="flex items-center space-x-3 mb-4">
-              <BsTelephone className="w-9 h-9 text-cyan-300" />
-              <p className="text-xl font-bold text-gray-400">+6281991029210</p>
+              <BsTelephone className="w-9 h-9 text-cyan-400" />
+              <Link href="https://api.whatsapp.com/send/?phone=%2B6281991029210&text&type=phone_number&app_absent=0">
+                <p className="text-xl font-bold text-gray-400 hover:underline hover:text-cyan-400 cursor-pointer transition-all duration-300">
+                  +6281991029210
+                </p>
+              </Link>
+            </div>
+
+            <div className="flex items-center space-x-3 mb-4">
+              <BiEnvelope className="w-9 h-9 text-cyan-400" />
+              <Link href="mailto:raihanrizki70@gmail.com">
+                <p className="text-xl font-bold text-gray-400 hover:underline hover:text-cyan-400 cursor-pointer transition-all duration-300">
+                  raihanrizki70@gmail.com
+                </p>
+              </Link>
             </div>
             <div className="flex items-center space-x-3 mb-4">
-              <BiEnvelope className="w-9 h-9 text-cyan-300" />
-              <p className="text-xl font-bold text-gray-400">
-                helloexample.com
-              </p>
-            </div>
-            <div className="flex items-center space-x-3 mb-4">
-              <BiMap className="w-9 h-9 text-cyan-300" />
+              <BiMap className="w-9 h-9 text-cyan-400" />
               <p className="text-xl font-bold text-gray-400">
                 Banten, Indonesia
               </p>
@@ -38,24 +53,30 @@ const Contact = () => {
           </div>
           {/* Social icon */}
           <div className="flex items-center mt-8 space-x-3">
-            <div
-              className="w-14 h-14 bg-blue-950 rounded-full flex items-center justify-center cursor-pointer flex-col
-            hover:bg-blue-800 transition-all duration-300"
-            >
-              <FaFacebook className="text-white w-6 h-6" />
-            </div>
-            <div
-              className="w-14 h-14 bg-blue-950 rounded-full flex items-center justify-center cursor-pointer flex-col
+            <Link href="https://www.linkedin.com/in/raihan-rizki">
+              <div
+                className="w-14 h-14 bg-blue-950 rounded-full flex items-center justify-center cursor-pointer flex-col
+            hover:bg-[#0077B5] transition-all duration-300"
+              >
+                <FaLinkedin className="text-white w-6 h-6" />
+              </div>
+            </Link>
+            <Link href="https://www.instagram.com/raihnrz/">
+              <div
+                className="w-14 h-14 bg-blue-950 rounded-full flex items-center justify-center cursor-pointer flex-col
             hover:bg-[#C13584] transition-all duration-300"
-            >
-              <FaInstagram className="text-white w-6 h-6" />
-            </div>
-            <div
-              className="w-14 h-14 bg-blue-950 rounded-full flex items-center justify-center cursor-pointer flex-col
+              >
+                <FaInstagram className="text-white w-6 h-6" />
+              </div>
+            </Link>
+            <Link href="https://github.com/raihan-rizky">
+              <div
+                className="w-14 h-14 bg-blue-950 rounded-full flex items-center justify-center cursor-pointer flex-col
             hover:bg-black transition-all duration-300"
-            >
-              <FaXTwitter className="text-white w-6 h-6" />
-            </div>
+              >
+                <FaGithub className="text-white w-6 h-6" />
+              </div>
+            </Link>
           </div>
         </div>
         {/* Form */}

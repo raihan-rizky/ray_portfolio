@@ -10,6 +10,7 @@ import Blog from "./Blog/Blog";
 import Contact from "./Contact/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import AboutMe from "./AboutMe/AboutMe";
 
 const Home = () => {
   useEffect(() => {
@@ -28,11 +29,12 @@ const Home = () => {
   return (
     <div className="overflow-hidden h-100%">
       <Hero />
-      <Services />
+      <AboutMe />
+      {/*<Services /> */}
       <Resume />
       <Projects />
       <Skills />
-      <ClientReview />
+      {/* <ClientReview /> */}
       <Blog />
       <Contact />
     </div>

@@ -1,12 +1,14 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 type Props = {
   image: string;
+  hyperlink: string;
   date: string;
   title: string;
   keywords: string[];
 };
-const BlogCard = ({ image, date, title, keywords }: Props) => {
+const BlogCard = ({ image, date, title, keywords, hyperlink }: Props) => {
   return (
     <div className="m-6">
       <Image
@@ -17,9 +19,11 @@ const BlogCard = ({ image, date, title, keywords }: Props) => {
         className="object-cover"
       />
       <p className="mt-2 text-gray-300 text-base sm:text-lg">{date}</p>
-      <h2 className="mt-6 text-lg sm:text-xl font-semibold text-white hover:underline hover:text-cyan-300 cursor-pointer transition-all duration-300">
-        {title}
-      </h2>
+      <Link href={hyperlink}>
+        <h2 className="mt-6 text-lg sm:text-xl font-semibold text-white hover:underline hover:text-cyan-300 cursor-pointer transition-all duration-300">
+          {title}
+        </h2>
+      </Link>
       <div>
         {keywords.map((keyword, index) => (
           <span

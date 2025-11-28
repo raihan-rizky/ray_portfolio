@@ -4,10 +4,14 @@ import Image from "next/image";
 import Typewriter from "typewriter-effect";
 import { BsArrowRight } from "react-icons/bs";
 import ParticlesHero from "./ParticleBackground";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen flex items-center bg-cyan-20 justify-center text-white overflow-hidden flex-col">
+    <div
+      id="home"
+      className="relative h-screen flex items-center bg-cyan-20 justify-center text-white overflow-hidden flex-col"
+    >
       <ParticlesHero />
       <div className="relative z-10 flex flex-col items-center">
         <Image
@@ -25,7 +29,7 @@ const Hero = () => {
         >
           Creating web products, <br />
           brands,
-          <span className="text-cyan-300"> and experiences.</span>
+          <span className="text-cyan-400"> and experiences.</span>
         </h1>
         <h2
           data-aos="fade-up"
@@ -33,7 +37,7 @@ const Hero = () => {
           className="mt-5 text-sm px-2 text-center sm:text-2xl font-medium flex items-center"
         >
           Hi! I&apos;m Ray, a passionate
-          <span className="text-cyan-300 font-bold">
+          <span className="text-cyan-400 font-bold">
             <Typewriter
               options={{
                 strings: [
@@ -50,15 +54,17 @@ const Hero = () => {
             />
           </span>
         </h2>
-        <button
-          data-aos="fade-up"
-          data-aos-delay="600"
-          className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300
+        <Link href="#project">
+          <button
+            data-aos="fade-up"
+            data-aos-delay="600"
+            className="mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300
         cursor-pointer rounded-full text-lg font-medium"
-        >
-          <span className="text-white">See my Work</span>
-          <BsArrowRight className="w-5 h-5 ml-2 inline-block text-white" />
-        </button>
+          >
+            <span className="text-white">See my Work</span>
+            <BsArrowRight className="w-5 h-5 ml-2 inline-block text-white" />
+          </button>
+        </Link>
       </div>
     </div>
   );
