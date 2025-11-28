@@ -7,9 +7,9 @@ const AboutMe = () => {
       <h1 className="text-center text-2xl md:text-4xl xl:text-5xl font-bold text-white">
         About <span className="text-cyan-400">Me</span>
       </h1>
-      <div className="w-[70%] sm:w-[50%] mx-auto grid grid-cols-1 lg:grid-cols-5 ">
+      <div className="w-[80%]  sm:w-[60%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
         {/* about me paragraph */}
-        <div className="text-base text-justify mt-10 lg:col-span-2 pt-12">
+        <div className="text-base text-justify mt-10 pt-12 lg:pr-20">
           <p className="text-white">
             Hi! I am an undergraduate physics student at Gadjah Mada University.
             I am a highly motivated and energetic individual who thrives in a
@@ -27,7 +27,7 @@ const AboutMe = () => {
           </p>
         </div>
         {/* Image of Me */}
-        <div className="col-span-3 relative pl-12 pt-16">
+        <div className="relative pt-16">
           <Image
             src="/images/me.png"
             alt="My Image"

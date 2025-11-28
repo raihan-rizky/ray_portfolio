@@ -13,8 +13,8 @@ const ResumeCard = ({ image, school, date, role, position }: Props) => {
   return (
     <div className="mb-6">
       <div className="flex items-start space-x-6 bg-blue-950/20 transition-all duration-300 p-4 sm:p-8 rounded-md">
-        <div className="sm:w-14 sm:h-14 w-20 h-16 bg-blue-950 rounded-lg flex items-center justify-center flex-col">
-          <Image src={image} alt="img" width={128} height={64} />
+        <div className=" sm:w-14 sm:h-14 lg:w-22 lg:h-22 bg-blue-950 rounded-lg flex items-center justify-center flex-col mt-8 lg:mt-0">
+          <Image src={image} alt="img" width={64} height={32} />
         </div>
         <div className="flex-1">
           {date && (
@@ -28,7 +28,7 @@ const ResumeCard = ({ image, school, date, role, position }: Props) => {
           <h1 className="text-gray-200 text-xl sm:text-2xl font-bold">
             {school}
           </h1>
-          <p className="text-white text-lg italic sm:text-base pt-2 font-semibold">
+          <p className="text-white text-base italic sm:text-lg pt-2 font-semibold">
             {position}
           </p>
           <div className="text-white text-sm sm:text-base pt-3">{role}</div>

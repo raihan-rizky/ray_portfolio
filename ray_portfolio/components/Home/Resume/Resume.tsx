@@ -20,7 +20,7 @@ const Resume = () => {
               data-aos-easing="ease-in-sine"
             >
               <ResumeCard
-                image="/images/bangkit.png"
+                image="/images/bangkit_small.png"
                 school="Bangkit Academy 2023 Batch 2"
                 date="Aug 2023 - Jan 2023"
                 role={
