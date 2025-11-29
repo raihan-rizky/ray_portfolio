@@ -29,7 +29,7 @@ const Resume = () => {
                     and delivered with support from industry experts from our
                     industry partners like Gojek, GoTo, and Google.
                     <br />
-                    <ul className="list-disc pl-4">
+                    <ul className="list-disc pl-4 text-gray-200">
                       <li>
                         Selected as one of the top candidates (top 7.5%) from
                         67,000+ applicants to participate in an intensive,
@@ -69,7 +69,7 @@ const Resume = () => {
                     programming program at Dicoding, funded by the Ministry of
                     Tourism and Creative Economy (Kemenparekraf/Baparekraf)
                     <br />
-                    <ul className="list-disc pl-4">
+                    <ul className="list-disc pl-4 text-gray-200">
                       <li>
                         Completed over 12 intensive technical courses, including
                         Intermediate Web Development, through the Baparekraf
@@ -112,7 +112,7 @@ const Resume = () => {
                     order of some hundred nanometers. This project held in
                     Laboratory of Material and Instrumental Physics
                     <br />
-                    <ul className="list-disc pl-4">
+                    <ul className="list-disc pl-4 text-gray-200">
                       <li>
                         Developed a fully interactive motion control system,
                         integrating a custom-designed Nextion GUI with Arduino
@@ -150,18 +150,13 @@ const Resume = () => {
             data-aos-duration="1000"
           >
             <ResumeCard
-              image="/images/sma.png"
-              school="SMAN 3 Kota Serang"
-              date="Jan 2018 - Dec 2020"
-            />
-            <ResumeCard
               image="/images/ugm.png"
               school="Gadjah Mada University"
               date="Aug 2021 - Nov 2025"
               role={
                 <>
                   <p className="italic">
-                    Bachelor of Physics with GPA 3.52/4.00
+                    Bachelor of Science in Physics with GPA 3.52/4.00
                   </p>
                 </>
               }
