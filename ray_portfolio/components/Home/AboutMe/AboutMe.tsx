@@ -11,9 +11,9 @@ const AboutMe = () => {
         {/* about me paragraph */}
         <div className="text-base text-justify mt-10 pt-12 lg:pr-20">
           <p className="text-white">
-            Hi! I am an undergraduate physics student at Gadjah Mada University.
-            I am a highly motivated and energetic individual who thrives in a
-            team- oriented environment. <br /> <br />
+            Hi! I am an fresh graduate physics student at Gadjah Mada
+            University. I am a highly motivated and energetic individual who
+            thrives in a team- oriented environment. <br /> <br />
             My insatiable curiosity about the world of data is a driving force
             in my academic pursuits, as I believe that data can unveil a wealth
             of insightful information that we may not have even considered
