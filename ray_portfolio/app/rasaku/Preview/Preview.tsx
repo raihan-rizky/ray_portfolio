@@ -24,10 +24,8 @@ const Preview = () => {
         declining every year with the entry of foreign products. Through Rasaku,
         discover the richness of Indonesia's culinary heritage. <br />
         <br />
-        Take advantage of our app's advanced features, including accurate
-        identification and classification of traditional dishes, a treasure
-        trove of authentic recipes, and personalized recommendations for the
-        same foods-all integrated with a map to guide users to the best places.
+        Experience the power of precise food classification and explore a vast
+        library of authentic recipes with our advanced features.
       </p>
     </div>
   );

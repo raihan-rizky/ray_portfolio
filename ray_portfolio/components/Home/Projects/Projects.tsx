@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 const skills_bangkit = [
-  "Apps",
+  "App",
   "UI/UX",
   "Machine Learning",
   "Tensorflow",
@@ -47,11 +47,11 @@ const Projects = () => {
               RASAKU - Indonesian Culinary Classifier
             </h2>
           </Link>
-          <p className="mt-2 font-medium text-gray-300">
-            RASAKU is an app that transforms your smartphone camera into a
-            digital pawang (expert guide) for the Indonesian palate, bridging
-            the gap between a simple snapshot of lunch and centuries of the
-            archipelago's culinary heritage.
+          <p className="mt-2 font-medium text-gray-300 text-justify">
+            RASAKU is an app that transforms your camera into a gateway for
+            Nusantara’s gastronomy, using AI to classify Indonesian dishes and
+            providing you with their cultural identity, historical background,
+            and its recipe in seconds.
           </p>
           <div>
             {skills_bangkit.map((skill, index) => (
@@ -79,7 +79,7 @@ const Projects = () => {
               Banten Panglipur - Cultural Preservation Website
             </h2>
           </Link>
-          <p className="mt-2 font-medium text-gray-300">
+          <p className="mt-2 font-medium text-gray-300 text-justify">
             Banten Panglipur is an online platform that aims to showcase,
             preserve, and promote the rich cultural heritage of the Banten
             region in Indonesia. The website serves as a comprehensive resource
@@ -109,7 +109,7 @@ const Projects = () => {
           <h2 className="mt-4 text-xl font-semibold sm:text-2xl text-white">
             Electrospinning Interface - Nextion Device
           </h2>
-          <p className="mt-2 font-medium text-gray-300">
+          <p className="mt-2 font-medium text-gray-300 text-justify">
             Electrospinning is a device that can produce nanofiber by use
             electric force to draw charged threads of polymer solutions or
             polymer melts up to fiber diameters in the order of some hundred

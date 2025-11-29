@@ -9,7 +9,7 @@ const AboutMe = () => {
       </h1>
       <div className="w-[80%]  sm:w-[60%] mx-auto grid grid-cols-1 lg:grid-cols-2 items-center">
         {/* about me paragraph */}
-        <div className="text-base text-justify mt-10 pt-12 lg:pr-20">
+        <div className="text-base text-justify pt-12 lg:pr-20">
           <p className="text-white">
             Hi! I am an fresh graduate physics student at Gadjah Mada
             University. I am a highly motivated and energetic individual who
