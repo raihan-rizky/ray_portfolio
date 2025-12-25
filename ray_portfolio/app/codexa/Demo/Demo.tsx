@@ -139,7 +139,7 @@ const Demo = () => {
             className="group inline-flex items-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-full transition-all duration-300 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105"
           >
             <FaRocket className="w-5 h-5" />
-            <span>Try Codexa Now — It&apos;s Free</span>
+            <span>Try Codexa Now</span>
             <BsArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </a>
         </div>
