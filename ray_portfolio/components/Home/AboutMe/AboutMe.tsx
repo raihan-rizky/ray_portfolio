@@ -27,7 +27,7 @@ const AboutMe = () => {
           </p>
         </div>
         {/* Image of Me */}
-        <div className="relative pt-16">
+        <div className="relative pt-16 animate-float">
           <Image
             src="/images/me.png"
             alt="My Image"

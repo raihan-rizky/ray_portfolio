@@ -10,6 +10,17 @@ const skills_bangkit = [
   "Python",
   "Keras",
 ];
+const skills_codexa = [
+  "RAG",
+  "UI/UX",
+  "Chatbot",
+  "PostgreSQL",
+  "React",
+  "Node.js",
+  "Vite",
+  "Artificial Intelligence",
+  "LangChain",
+];
 const skills_bdt = [
   "Web Development",
   "Javascript",
@@ -37,7 +48,7 @@ const Projects = () => {
           <Link href="/codexa">
             <Image
               src="/images/codexa-landing.gif"
-              alt="img" 
+              alt="img"
               width={800}
               height={650}
               className="rounded-lg"
@@ -48,10 +59,11 @@ const Projects = () => {
             </h2>
           </Link>
           <p className="mt-2 font-medium text-gray-300 text-justify">
-            Codexa is an AI code explainer that leverages RAG capabilities to help users understand code faster with its hybrid processing.
+            Codexa is an AI code explainer that leverages RAG capabilities to
+            help users understand code faster with its hybrid processing.
           </p>
           <div>
-            {skills_bangkit.map((skill, index) => (
+            {skills_codexa.map((skill, index) => (
               <span
                 key={index}
                 className="inline-block bg-blue-950 text-white text-medium font-semibold px-4 py-2 rounded-full mr-2 mt-4"
