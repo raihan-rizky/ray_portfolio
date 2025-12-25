@@ -162,6 +162,49 @@ const Resume = () => {
               }
             />
           </div>
+          <h1 className="text-xl sm:text-4xl font-bold text-white text-justify">
+            Organizational <span className="text-cyan-400">Experience</span>
+          </h1>
+          <div
+            className="mt-10"
+            data-aos="fade-left"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
+            <ResumeCard
+              image="/images/ugm.png"
+              school="BEM KM FMIPA UGM"
+              date="Aug 2022 - Dec 2023"
+              position="Staff of Social Ministry"
+              role={
+                <>
+                  <>
+                    BEM KM FMIPA is a student organization that focuses on
+                    leadership development and student governance in
+                    universities or colleges.
+                    <br />
+                    <ul className="list-disc pl-4 text-gray-200">
+                      <li>
+                        Led a dynamic social program aimed at fostering
+                        community engagement and strengthening bonds by creating
+                        a platform for sharing and promoting each other&apos;s
+                        social initiatives.
+                      </li>
+                      <li>
+                        Designed impactful donation posters for social programs,
+                        effectively communicating the program's mission and
+                        impact to potential donors.
+                      </li>
+                      <li>
+                        Successfully created a social program with a high
+                        positive impact on society.
+                      </li>
+                    </ul>
+                  </>
+                </>
+              }
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -34,6 +34,34 @@ const Projects = () => {
       <div className="w-[70%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
         {/* First Project */}
         <div data-aos="fade-up">
+          <Link href="/codexa">
+            <Image
+              src="/images/codexa-landing.gif"
+              alt="img" 
+              width={800}
+              height={650}
+              className="rounded-lg"
+            />
+
+            <h2 className="mt-4 text-xl font-semibold sm:text-2xl text-white  hover:text-cyan-400 cursor-pointer transition-all duration-300">
+              Codexa - AI Code Explainer
+            </h2>
+          </Link>
+          <p className="mt-2 font-medium text-gray-300 text-justify">
+            Codexa is an AI code explainer that leverages RAG capabilities to help users understand code faster with its hybrid processing.
+          </p>
+          <div>
+            {skills_bangkit.map((skill, index) => (
+              <span
+                key={index}
+                className="inline-block bg-blue-950 text-white text-medium font-semibold px-4 py-2 rounded-full mr-2 mt-4"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+        <div data-aos="fade-up">
           <Link href="/rasaku">
             <Image
               src="/images/rasaku-app.gif"
