@@ -67,7 +67,7 @@ const Nav = ({ openNav }: Props) => {
                         duration-300 text-white flex items-center space-x-2"
           >
             <BiDownload className="text-lg" />
-            <Link href="https://drive.google.com/file/d/1AeUVuZ_wQpL6P8M2ZSO9zRxwksqMN9Iw/view?usp=sharing">
+            <Link href="https://drive.google.com/file/d/1ESrESGdvRb7cn8CA0hHy7ZGCCDTv0mL_/view?usp=sharing">
               <p>
                 <span className="hidden md:inline-block">Download</span> CV
               </p>

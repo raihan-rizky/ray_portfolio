@@ -39,9 +39,8 @@ const audiences = [
 
 const highlights = [
   "No credit card required",
-  "Works with any programming language",
+  "Works with popular programming language",
   "Instant responses powered by Llama 3.3",
-  "Upload unlimited files",
 ];
 
 const Preview = () => {
@@ -61,9 +60,9 @@ const Preview = () => {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
             data-aos="fade-up"
           >
-            Supercharge Your{" "}
+            Understand{" "}
             <span className="bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 bg-clip-text text-transparent">
-              Code Understanding
+              Code Faster
             </span>
           </h2>
 

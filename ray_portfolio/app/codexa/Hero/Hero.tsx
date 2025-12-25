@@ -45,7 +45,7 @@ const Hero = () => {
               My Very First{" "}
               <span className="relative">
                 <span className="bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 bg-clip-text text-transparent">
-                  End-to-end AI Project.
+                  End-to-end AI Project: Codexa.
                 </span>
                 <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 rounded-full opacity-50" />
               </span>
@@ -57,9 +57,10 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Type your code and receive clear, instant explanations powered by
-              AI, designed to break down complex logic into simple and
-              understandable insights.
+              Building this was an incredible journey. My goal started simply:
+              create an AI app that balances performance with cost. However,
+              throughout the process, I learned that &apos;balance&apos;
+              requires deep technical trade-offs.
             </p>
 
             {/* CTA Buttons */}
@@ -69,7 +70,7 @@ const Hero = () => {
               data-aos-delay="300"
             >
               <a
-                href="https://codeexplain-web.vercel.app/"
+                href="https://codexa-ai.site/#/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-full transition-all duration-300 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105"
@@ -96,7 +97,7 @@ const Hero = () => {
             >
               <div className="text-center">
                 <div className="text-2xl sm:text-3xl font-bold text-white">
-                  10+
+                  6+
                 </div>
                 <div className="text-sm text-gray-500">Languages Supported</div>
               </div>
@@ -105,12 +106,6 @@ const Hero = () => {
                   RAG
                 </div>
                 <div className="text-sm text-gray-500">Powered Analysis</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl sm:text-3xl font-bold text-white">
-                  ∞
-                </div>
-                <div className="text-sm text-gray-500">Code Uploads</div>
               </div>
             </div>
           </div>

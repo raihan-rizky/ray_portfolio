@@ -11,7 +11,6 @@ import {
   FaServer,
 } from "react-icons/fa";
 import { BsTwitterX, BsStars } from "react-icons/bs";
-import { SiPhysics } from "react-icons/si";
 
 const skills = [
   { icon: FaBrain, label: "AI/ML", color: "emerald" },

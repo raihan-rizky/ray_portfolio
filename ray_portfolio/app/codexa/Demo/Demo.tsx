@@ -121,9 +121,6 @@ const Demo = () => {
             data-aos-delay="500"
           >
             <div className="px-4 py-2 rounded-lg bg-[#1a2332] border border-emerald-500/30 text-emerald-400 text-sm font-medium">
-              📁 Multi-file Support
-            </div>
-            <div className="px-4 py-2 rounded-lg bg-[#1a2332] border border-emerald-500/30 text-emerald-400 text-sm font-medium">
               🔐 Secure & Private
             </div>
           </div>

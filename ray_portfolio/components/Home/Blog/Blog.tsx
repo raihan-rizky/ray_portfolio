@@ -17,6 +17,23 @@ const Blog = () => {
             keywords={["Growth Mindset", "Adaptability", "Journey"]}
           />
         </div>
+        <div data-aos="fade-up">
+          <BlogCard
+            hyperlink="https://www.linkedin.com/posts/raihan-rizki_how-i-built-an-ai-assistant-optimizing-rag-activity-7409090198136881152-6GTI?utm_source=share&utm_medium=member_desktop&rcm=ACoAADpPGcABTLLRAFQ7DxgNkabxtmyOi3mLZTc"
+            image="/images/CODEXA_AI.jpg"
+            date="24 December 2025"
+            title="How I Built an AI Assistant: Optimizing RAG Latency & Cost"
+            keywords={[
+              "AI",
+              "RAG",
+              "Journey",
+              "LangChain",
+              "Optimization",
+              "Llama",
+              "ONNX",
+            ]}
+          />
+        </div>
         {/*
         <div data-aos="fade-up" data-aos-delay="200">
           {" "}
