@@ -55,9 +55,9 @@ const Hero = () => {
           {/* Glow effect */}
           <div className="absolute -inset-4 bg-cyan-500/20 rounded-full blur-xl animate-pulse" />
 
-          <div className="relative p-1 w-[120px] h-[120px] md:w-[150px] md:h-[150px] rounded-full bg-gradient-to-r from-slate-900 to-slate-800">
+          <div className="relative p-1 rounded-full bg-gradient-to-r from-slate-900 to-slate-800">
             <Image
-              src="/images/raihan_foto.jpg"
+              src="/images/raihan_foto.JPG"
               alt="Raihan - AI Engineer"
               width={150}
               height={150}
@@ -122,7 +122,7 @@ const Hero = () => {
         >
           {/* Primary CTA - Glassmorphism */}
           <Link href="#project">
-            <button className="group relative px-8 py-4 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25">
+            <button className="group hover:cursor-pointer relative px-8 py-4 rounded-full overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25">
               {/* Animated gradient background */}
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 animate-gradient-x" />
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-300" />
@@ -130,7 +130,7 @@ const Hero = () => {
               {/* Glass overlay */}
               <div className="absolute inset-[1px] rounded-full bg-gradient-to-b from-white/20 to-transparent opacity-50" />
 
-              <span className="relative flex items-center gap-2 text-white font-semibold text-lg">
+              <span className="relative flex items-center gap-2 text-white font-semibold text-lg ">
                 <HiSparkles className="w-5 h-5" />
                 Explore My Work
                 <BsArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
@@ -140,7 +140,7 @@ const Hero = () => {
 
           {/* Secondary CTA */}
           <Link href="#contact">
-            <button className="group px-8 py-4 rounded-full border border-slate-600/50 bg-slate-800/30 backdrop-blur-sm hover:bg-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
+            <button className="group px-8 py-4 hover:cursor-pointer rounded-full border border-slate-600/50 bg-slate-800/30 backdrop-blur-sm hover:bg-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:scale-105">
               <span className="text-slate-300 group-hover:text-cyan-300 font-medium text-lg transition-colors duration-300">
                 Get in Touch
               </span>

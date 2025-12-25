@@ -2,10 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import {
-  FaUserGraduate,
-  FaLaptopCode,
-  FaUsers,
-  FaLightbulb,
+  FaRocket,
+  FaBolt,
+  FaMicrochip,
+  FaChartLine,
   FaCheckCircle,
 } from "react-icons/fa";
 import { BsLightningChargeFill } from "react-icons/bs";
@@ -16,31 +16,46 @@ const previewImages = [
   "/images/landing-page-4.png",
 ];
 
-const audiences = [
+const performanceStats = [
   {
-    icon: FaUserGraduate,
-    title: "For Students",
+    icon: FaBolt,
+    metric: "96%",
+    title: "Latency Reduction",
     description:
-      "Learn faster with AI-powered explanations that break down complex algorithms and data structures.",
+      "Reduced response time from 15s to <500ms using real-time LLM token streaming via SSE.",
+    highlight: "15s → <500ms",
   },
   {
-    icon: FaLaptopCode,
-    title: "For Developers",
+    icon: FaChartLine,
+    metric: "95%+",
+    title: "Relevance Accuracy",
     description:
-      "Onboard to new codebases instantly. Understand legacy code without hunting down documentation.",
+      "Production RAG pipeline with LangChain and Llama-3.3-70B achieving high precision at 75% similarity threshold.",
+    highlight: "pgvector powered",
   },
   {
-    icon: FaUsers,
-    title: "For Teams",
+    icon: FaMicrochip,
+    metric: "<50ms",
+    title: "Embedding Speed",
     description:
-      "Share knowledge effortlessly. Make your codebase accessible to every team member.",
+      "Local embedding generation using Xenova Transformers.js, eliminating external API costs entirely.",
+    highlight: "Zero API costs",
+  },
+  {
+    icon: FaRocket,
+    metric: "42%",
+    title: "Query Optimization",
+    description:
+      "Optimized with embedding model preloading and lightweight 384-dim vector embeddings.",
+    highlight: "384-dim vectors",
   },
 ];
 
 const highlights = [
-  "No credit card required",
-  "Works with popular programming language",
-  "Instant responses powered by Llama 3.3",
+  "Powered by Llama-3.3-70B",
+  "Real-time SSE Streaming",
+  "LangChain RAG Pipeline",
+  "pgvector Similarity Search",
 ];
 
 const Preview = () => {
@@ -121,35 +136,46 @@ const Preview = () => {
           </div>
         </div>
 
-        {/* Audience Cards */}
+        {/* Performance Stats Cards */}
         <div
-          className="grid md:grid-cols-3 gap-6 lg:gap-8 mb-16"
+          className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-16"
           data-aos="fade-up"
           data-aos-delay="200"
         >
-          {audiences.map((audience, index) => (
+          {performanceStats.map((stat, index) => (
             <div
               key={index}
-              className="group relative bg-gradient-to-b from-[#1a2332]/80 to-[#151b27]/80 rounded-2xl border border-gray-800 hover:border-emerald-500/50 p-8 transition-all duration-500"
+              className="group relative bg-gradient-to-b from-[#1a2332]/80 to-[#151b27]/80 rounded-2xl border border-gray-800 hover:border-emerald-500/50 p-6 transition-all duration-500 overflow-hidden"
             >
               {/* Hover Glow */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-emerald-500/0 to-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-emerald-500/0 to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
               <div className="relative">
-                {/* Icon */}
-                <div className="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-emerald-500/20 transition-all duration-300">
-                  <audience.icon className="w-7 h-7 text-emerald-400" />
+                {/* Icon & Metric */}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:scale-110 group-hover:bg-emerald-500/20 transition-all duration-300">
+                    <stat.icon className="w-6 h-6 text-emerald-400" />
+                  </div>
+                  <span className="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">
+                    {stat.metric}
+                  </span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-white mb-3">
-                  {audience.title}
+                <h3 className="text-lg font-bold text-white mb-2">
+                  {stat.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  {audience.description}
+                <p className="text-gray-400 text-sm leading-relaxed mb-4">
+                  {stat.description}
                 </p>
+
+                {/* Highlight Badge */}
+                <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium">
+                  <BsLightningChargeFill className="w-3 h-3" />
+                  {stat.highlight}
+                </span>
               </div>
 
               {/* Bottom Accent */}

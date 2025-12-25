@@ -38,16 +38,19 @@ const Hero = () => {
 
             {/* Main Heading */}
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-6"
+              className="text-4xl sm:text-5xl lg:text-6xl  font-bold text-white leading-tight mb-6"
               data-aos="fade-up"
               data-aos-delay="100"
             >
               My Very First{" "}
               <span className="relative">
                 <span className="bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 bg-clip-text text-transparent">
-                  End-to-end AI Project: Codexa.
+                  End-to-end AI Project:{" "}
                 </span>
-                <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 rounded-full opacity-50" />
+                <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-green-400 bg-clip-text text-transparent animate-gradient-x">
+                  Codexa.
+                </span>
+                <span className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 rounded-full opacity-50 animate-gradient-x" />
               </span>
             </h1>
 
@@ -57,10 +60,9 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              Building this was an incredible journey. My goal started simply:
-              create an AI app that balances performance with cost. However,
-              throughout the process, I learned that &apos;balance&apos;
-              requires deep technical trade-offs.
+              I set out to build an efficient, budget-friendly AI app, but the
+              journey taught me a crucial lesson: balancing performance and cost
+              is rarely simple—it requires navigating deep technical trade-offs.
             </p>
 
             {/* CTA Buttons */}
@@ -69,14 +71,28 @@ const Hero = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
+              {/* Try for Free - Animated Border */}
               <a
                 href="https://codexa-ai.site/#/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-full transition-all duration-300 shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-105"
+                className="group relative inline-flex items-center justify-center rounded-full p-[2px] overflow-hidden hover:scale-105 transition-transform duration-300"
               >
-                <span>Try for Free</span>
-                <BsArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                {/* Animated gradient border */}
+                <span className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-blue-500 to-violet-500 animate-spin-slow rounded-full" />
+                <span
+                  className="absolute inset-0 bg-gradient-to-r from-violet-500 via-teal-400 to-blue-500 animate-spin-slow rounded-full opacity-50"
+                  style={{
+                    animationDirection: "reverse",
+                    animationDuration: "4s",
+                  }}
+                />
+
+                {/* Button content */}
+                <span className="relative flex items-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold rounded-full transition-all duration-300 shadow-lg shadow-emerald-500/25">
+                  <span>Try for Free</span>
+                  <BsArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </span>
               </a>
               <a
                 href="https://github.com/raihan-rizky/codexa"
